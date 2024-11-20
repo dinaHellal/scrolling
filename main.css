@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: linear-gradient(#2e0221,#4e0427);
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    position: fixed;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    z-index: 10;
+}
+header .logo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+ul {
+display: flex;
+justify-content: center;
+align-items: center;
+list-style: none;
+
+}
+ul li {
+margin-right: 30px;
+}
+ul li a{
+    padding: 6px 15px;
+    transition: .5s;
+    border-radius: 15px;
+
+}
+ul li a:hover, .active{
+    background-color:rgb(180, 180, 178);
+    color: #310323;
+}
+.main{
+   position: relative;
+   height: 100vh;
+   width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+.main::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100px;
+    background:linear-gradient(to top, #2e0221 , transparent ) ;
+}
+.main img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#moon{
+    mix-blend-mode:screen ;
+    transform:translateY(80px) ;
+
+}
+.donel{
+    color: white;
+    font-size: 25x;
+    text-transform: uppercase;
+transform:translateY(-140px) ;
+}
+.cont{
+    color: white;
+    padding: 30px;
+}
+.cont h2{
+    margin: 20px;
+    font-size: 30px;
+}
+.cont p{
+    margin: 20px;
+}
